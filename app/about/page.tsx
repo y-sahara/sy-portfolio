@@ -1,10 +1,16 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Github, Linkedin, Mail, Send, Twitter } from 'lucide-react'
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Github, Linkedin, Mail, Send, Twitter } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -13,7 +19,7 @@ export default function AboutPage() {
         <header className="mb-16 md:mb-24">
           <h1 className="text-4xl font-bold tracking-tight mb-4">About Me</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            A passionate developer focused on creating exceptional web experiences.
+            A Software Engineer.
           </p>
         </header>
 
@@ -32,34 +38,54 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold mb-4">Hello, I'm John Doe</h2>
             <p className="text-muted-foreground mb-6">
-              I'm a full-stack developer with over 5 years of experience building web applications. 
-              I specialize in React, Next.js, and Node.js, and I'm passionate about creating 
-              user-friendly interfaces and scalable backend solutions.
+              I'm a full-stack developer with over 5 years of experience
+              building web applications. I specialize in React, Next.js, and
+              Node.js, and I'm passionate about creating user-friendly
+              interfaces and scalable backend solutions.
             </p>
             <p className="text-muted-foreground mb-6">
-              My journey in web development started in 2018, and since then, I've worked 
-              on a variety of projects, from small business websites to complex web applications. 
-              I believe in writing clean, maintainable code and staying up-to-date with the 
-              latest technologies and best practices.
+              My journey in web development started in 2018, and since then,
+              I've worked on a variety of projects, from small business websites
+              to complex web applications. I believe in writing clean,
+              maintainable code and staying up-to-date with the latest
+              technologies and best practices.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="outline" size="sm">
-                <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Link
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
                   <Github className="h-4 w-4" /> GitHub
                 </Link>
               </Button>
               <Button asChild variant="outline" size="sm">
-                <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Link
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
                   <Linkedin className="h-4 w-4" /> LinkedIn
                 </Link>
               </Button>
               <Button asChild variant="outline" size="sm">
-                <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Link
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
                   <Twitter className="h-4 w-4" /> Twitter
                 </Link>
               </Button>
               <Button asChild variant="outline" size="sm">
-                <Link href="mailto:email@example.com" className="flex items-center gap-2">
+                <Link
+                  href="mailto:email@example.com"
+                  className="flex items-center gap-2"
+                >
                   <Mail className="h-4 w-4" /> Email
                 </Link>
               </Button>
@@ -80,25 +106,37 @@ export default function AboutPage() {
                   <li className="flex items-center justify-between">
                     <span>React.js</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '90%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "90%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>Next.js</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '85%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "85%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>Tailwind CSS</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '95%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "95%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>TypeScript</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '80%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "80%" }}
+                      ></div>
                     </div>
                   </li>
                 </ul>
@@ -113,25 +151,37 @@ export default function AboutPage() {
                   <li className="flex items-center justify-between">
                     <span>Node.js</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '85%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "85%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>Express.js</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '80%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "80%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>MongoDB</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '75%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "75%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>PostgreSQL</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '70%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "70%" }}
+                      ></div>
                     </div>
                   </li>
                 </ul>
@@ -146,25 +196,37 @@ export default function AboutPage() {
                   <li className="flex items-center justify-between">
                     <span>UI/UX Design</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '75%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "75%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>DevOps</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '65%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "65%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>Project Management</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '80%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "80%" }}
+                      ></div>
                     </div>
                   </li>
                   <li className="flex items-center justify-between">
                     <span>Testing</span>
                     <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '70%' }}></div>
+                      <div
+                        className="h-full bg-primary"
+                        style={{ width: "70%" }}
+                      ></div>
                     </div>
                   </li>
                 </ul>
@@ -182,7 +244,8 @@ export default function AboutPage() {
                 <CardHeader>
                   <CardTitle>Get in Touch</CardTitle>
                   <CardDescription>
-                    Fill out the form and I'll get back to you as soon as possible.
+                    Fill out the form and I'll get back to you as soon as
+                    possible.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -198,7 +261,11 @@ export default function AboutPage() {
                         <label htmlFor="email" className="text-sm font-medium">
                           Email
                         </label>
-                        <Input id="email" type="email" placeholder="Your email" />
+                        <Input
+                          id="email"
+                          type="email"
+                          placeholder="Your email"
+                        />
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -211,7 +278,11 @@ export default function AboutPage() {
                       <label htmlFor="message" className="text-sm font-medium">
                         Message
                       </label>
-                      <Textarea id="message" placeholder="Your message" rows={5} />
+                      <Textarea
+                        id="message"
+                        placeholder="Your message"
+                        rows={5}
+                      />
                     </div>
                     <Button className="w-full" type="submit">
                       <Send className="h-4 w-4 mr-2" /> Send Message
@@ -230,34 +301,44 @@ export default function AboutPage() {
                     <Mail className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
                       <h3 className="text-sm font-semibold">Email</h3>
-                      <p className="text-sm text-muted-foreground">email@example.com</p>
+                      <p className="text-sm text-muted-foreground">
+                        email@example.com
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <Linkedin className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
                       <h3 className="text-sm font-semibold">LinkedIn</h3>
-                      <p className="text-sm text-muted-foreground">linkedin.com/in/johndoe</p>
+                      <p className="text-sm text-muted-foreground">
+                        linkedin.com/in/johndoe
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <Github className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
                       <h3 className="text-sm font-semibold">GitHub</h3>
-                      <p className="text-sm text-muted-foreground">github.com/johndoe</p>
+                      <p className="text-sm text-muted-foreground">
+                        github.com/johndoe
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <Twitter className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
                       <h3 className="text-sm font-semibold">Twitter</h3>
-                      <p className="text-sm text-muted-foreground">twitter.com/johndoe</p>
+                      <p className="text-sm text-muted-foreground">
+                        twitter.com/johndoe
+                      </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
               <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-4">Currently Available For</h3>
+                <h3 className="text-lg font-semibold mb-4">
+                  Currently Available For
+                </h3>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <span className="inline-block h-2 w-2 rounded-full bg-green-500 mr-2"></span>
@@ -278,5 +359,5 @@ export default function AboutPage() {
         </section>
       </div>
     </div>
-  )
+  );
 }
